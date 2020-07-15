@@ -29,16 +29,7 @@ namespace Kaczorek1.BLTest
            
         }
 
-        [TestMethod]
-        public void PobierzZamowienieDoWyswietleniaTest()
-        {
-            //arrange
-            var zamowienieRepository = new ZamowienieRepository();
-            var oczekiwana = new WyswietlanieZamowienia()
-            {
-
-
-            }
+      
         }
     }
-}
+

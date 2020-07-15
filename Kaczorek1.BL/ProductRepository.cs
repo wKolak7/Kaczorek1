@@ -8,29 +8,31 @@ namespace Kaczorek1.BL
 {
     public class ProductRepository
     {
-    
+
         public Produkt Pobierz(int produktId)
         {
 
             //tworzenie instancji produktu
 
             Produkt produkt = new Produkt(produktId);
+            Object mojObiekt = new Object();
 
-
+            Console.WriteLine("Obiekt: " + mojObiekt.ToString());
+            Console.WriteLine("Produkt: " + produkt.ToString());
 
 
             //kod ktory pobiera okreslony produkt
 
 
             // tymczasowo zwracane wartosci
-            if (produktId== 5)
+            if (produktId == 5)
             {
                 produkt.NazwaProduktu = "Klocki";
                 produkt.Opis = "Klocki dla dzieci";
                 produkt.AktualnaCena = 89.99M;
 
-             }
-                return produkt;
+            }
+            return produkt;
 
         }
         //pobieramy wszystkie produkty
